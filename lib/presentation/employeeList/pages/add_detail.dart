@@ -112,8 +112,8 @@ class _AddDetailState extends State<AddDetail> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
-                      width: 172,
+                    Expanded(
+                      flex: 3,
                       child: BoxInputField(
                         leading: const Icon(TablerIcons.calendar_event),
                         dismissKeyboard: true,
@@ -123,12 +123,15 @@ class _AddDetailState extends State<AddDetail> {
                         },
                       ),
                     ),
-                    const Icon(
-                      TablerIcons.arrow_narrow_right,
-                      color: appPrimaryColor,
+                    Expanded(
+                      flex: 1,
+                      child: const Icon(
+                        TablerIcons.arrow_narrow_right,
+                        color: appPrimaryColor,
+                      ),
                     ),
-                    SizedBox(
-                      width: 172,
+                    Expanded(
+                      flex: 3,
                       child: BoxInputField(
                         leading: const Icon(TablerIcons.calendar_event),
                         dismissKeyboard: true,
@@ -140,10 +143,6 @@ class _AddDetailState extends State<AddDetail> {
                       ),
                     ),
                   ],
-                ),
-                IconButton(
-                  icon: Icon(TablerIcons.infinity),
-                  onPressed: () {},
                 ),
               ],
             ),

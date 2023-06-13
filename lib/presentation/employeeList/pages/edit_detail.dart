@@ -123,8 +123,8 @@ class _EditDetailState extends State<EditDetail> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
-                      width: 172,
+                    Expanded(
+                      flex: 3,
                       child: BoxInputField(
                         leading: const Icon(TablerIcons.calendar_event),
                         dismissKeyboard: true,
@@ -134,12 +134,15 @@ class _EditDetailState extends State<EditDetail> {
                         },
                       ),
                     ),
-                    const Icon(
-                      Icons.arrow_forward_rounded,
-                      color: appPrimaryColor,
+                    Expanded(
+                      flex: 1,
+                      child: const Icon(
+                        Icons.arrow_forward_rounded,
+                        color: appPrimaryColor,
+                      ),
                     ),
-                    SizedBox(
-                      width: 172,
+                    Expanded(
+                      flex: 3,
                       child: BoxInputField(
                         leading: const Icon(TablerIcons.calendar_event),
                         dismissKeyboard: true,
