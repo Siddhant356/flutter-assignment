@@ -24,7 +24,6 @@ class BoxPrimaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 40,
-      width: 73,
       decoration: BoxDecoration(color: !disabled ? appPrimaryColor : Colors.grey, borderRadius: BorderRadius.circular(6)),
       child: Material(
         color: Colors.transparent,
@@ -80,7 +79,6 @@ class BoxSecondaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 40,
-      width: 73,
       decoration: BoxDecoration(color: !disabled ? appSecondaryColor : Colors.grey, borderRadius: BorderRadius.circular(6)),
       child: Material(
         color: Colors.transparent,
